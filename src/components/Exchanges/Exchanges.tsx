@@ -16,7 +16,7 @@ const Exchanges = () => {
   return (
     <div>
       <Link href={`/crypto/${coinId}`}>
-        <Button fontSize={"1.2rem"}>
+        <Button fontSize={"1.2rem"} m={"8px"}>
           <BiArrowBack />
         </Button>
       </Link>
