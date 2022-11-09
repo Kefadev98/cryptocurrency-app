@@ -20,7 +20,7 @@ const CryptoDetails = () => {
   return (
     <Box>
       <Link to="/cryptocurrencies">
-        <Button fontSize={"1.2rem"}>
+        <Button fontSize={"1.2rem"} m={"8px"}>
           <BiArrowBack />
         </Button>
       </Link>

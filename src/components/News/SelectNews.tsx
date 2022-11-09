@@ -1,5 +1,6 @@
 import React from "react";
 import { useGetTotalsQuery } from "../../services/cryptoApi";
+import { Box } from "@chakra-ui/react";
 
 type Props = {
   newsCategory: string;
@@ -9,7 +10,7 @@ type Props = {
 const SelectNews = ({ setNewsCategory, newsCategory }: Props) => {
   const { data } = useGetTotalsQuery(undefined);
   return (
-    <div>
+    <Box mt={"55px"}>
       <select
         className="select-news"
         onChange={(e) => {
@@ -23,7 +24,7 @@ const SelectNews = ({ setNewsCategory, newsCategory }: Props) => {
           </option>
         ))}
       </select>
-    </div>
+    </Box>
   );
 };
 
