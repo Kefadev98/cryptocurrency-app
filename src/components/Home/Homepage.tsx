@@ -17,7 +17,7 @@ const Homepage = () => {
     <Box mt={"20px"}>
       <Heading
         my={"20px"}
-        fontSize={"3xl"}
+        fontSize={"2xl"}
         color={"#1A365D"}
         fontWeight={"bold"}
         pl={"10px"}
@@ -32,25 +32,35 @@ const Homepage = () => {
         p={"20px"}
       >
         <Box height="80px">
-          <Text color={"#718096"}>Total Cryptocurrencies</Text>
+          <Text color={"#718096"} fontSize={"md"}>
+            Total Cryptocurrencies
+          </Text>
           <Text fontSize={"1.5rem"}>{millify(globalStats?.total)}</Text>
         </Box>
         <Box height="80px">
-          <Text color={"#718096"}>Total Market Cap</Text>
+          <Text color={"#718096"} fontSize={"md"}>
+            Total Market Cap
+          </Text>
           <Text fontSize={"1.5rem"}>
             {millify(globalStats?.totalMarketCap)}
           </Text>
         </Box>
         <Box height="80px">
-          <Text color={"#718096"}>Total Markets</Text>
+          <Text color={"#718096"} fontSize={"md"}>
+            Total Markets
+          </Text>
           <Text fontSize={"1.5rem"}>{millify(globalStats?.totalMarkets)}</Text>
         </Box>
         <Box height="80px">
-          <Text color={"#718096"}>Total Exchanges</Text>
+          <Text color={"#718096"} fontSize={"md"}>
+            Total Exchanges
+          </Text>
           <Text fontSize={"1.5rem"}>{globalStats?.totalExchanges}</Text>
         </Box>
         <Box height="80px">
-          <Text color={"#718096"}>Total 24h Volume</Text>
+          <Text color={"#718096"} fontSize={"md"}>
+            Total 24h Volume
+          </Text>
           <Text fontSize={"1.5rem"}>
             {millify(globalStats?.total24hVolume)}
           </Text>
@@ -62,20 +72,14 @@ const Homepage = () => {
           <Heading
             fontWeight={"bold"}
             color={"#1A365D"}
-            fontSize={"3xl"}
+            fontSize={"2xl"}
             ml={"20px"}
           >
             Top Cryptocurrencies
           </Heading>
           <Link to="/cryptocurrencies">
-            <Text
-              fontWeight={"semi-bold"}
-              color={"#3182CE"}
-              mr={"30px"}
-              mt={"10px"}
-              fontSize={"1.1rem"}
-            >
-              Show More...
+            <Text fontWeight={"bold"} color={"#3182CE"} mr={"20px"} mt={"6px"}>
+              Show More
             </Text>
           </Link>
         </Flex>
@@ -87,20 +91,14 @@ const Homepage = () => {
           <Heading
             fontWeight={"bold"}
             color={"#1A365D"}
-            fontSize={"3xl"}
+            fontSize={"2xl"}
             ml={"20px"}
           >
             Latest Crypto News
           </Heading>
           <Link to="/news">
-            <Text
-              fontWeight={"semi-bold"}
-              color={"#3182CE"}
-              mr={"30px"}
-              mt={"10px"}
-              fontSize={"1.1rem"}
-            >
-              Show More...
+            <Text fontWeight={"bold"} color={"#3182CE"} mr={"20px"} mt={"5px"}>
+              Show More
             </Text>
           </Link>
         </Flex>

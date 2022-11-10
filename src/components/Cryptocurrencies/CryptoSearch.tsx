@@ -39,7 +39,7 @@ const CryptoSearch = ({ cryptosList, setCryptos }: Props) => {
 
   return (
     <div>
-      <Flex w={"90%"} m={"50px 0 0 30px"} alignItems={"center"}>
+      <Flex w={"90%"} m={"50px 0 0 5%"} alignItems={"center"}>
         {!isSmallerThan900 ? (
           <Text fontSize={"1.5rem"} mr={"10px"}>
             <BiSearch />

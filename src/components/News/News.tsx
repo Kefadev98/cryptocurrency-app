@@ -32,7 +32,7 @@ const News = ({ simplified }: Props) => {
           newsCategory={newsCategory}
         />
       )}
-      <Flex flexWrap={"wrap"} mt={"20px"} justifyContent={"center"}>
+      <Flex flexWrap={"wrap"} mt={"20px"} justifyContent={"space-evenly"}>
         {cryptoNews?.value?.map((news: any) => (
           <Link href={news.url} key={news.name}>
             <Flex
