@@ -10,7 +10,7 @@ const TopCryptocurrencies = () => {
   if (isFetching) return <Spinner size="xl" />;
   return (
     <div>
-      <Flex flexWrap={"wrap"} justifyContent={"center"}>
+      <Flex flexWrap={"wrap"} justifyContent={"space-evenly"}>
         {cryptos?.slice(0, 8).map((currency: any) => (
           <Box key={currency.uuid} m={"30px"}>
             <Link to={`/crypto/${currency.uuid}`}>

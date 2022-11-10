@@ -14,7 +14,7 @@ const Cryptocurrencies = () => {
     <div>
       {/*CryptoSearch component*/}
       <CryptoSearch cryptosList={cryptosList} setCryptos={setCryptos} />
-      <Flex flexWrap={"wrap"} mt={"20px"} justifyContent={"center"}>
+      <Flex flexWrap={"wrap"} mt={"20px"} justifyContent={"space-evenly"}>
         {isFetching && <Loader />}
         {cryptos?.map((currency: any) => (
           <Box key={currency.uuid} m={"30px"}>

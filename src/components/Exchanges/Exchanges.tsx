@@ -27,7 +27,7 @@ const Exchanges = () => {
           cryptocurrency. For more information, click on cryptocurrency icon.
         </Text>
 
-        <Flex flexWrap={"wrap"} mt={"20px"} justifyContent={"center"}>
+        <Flex flexWrap={"wrap"} mt={"20px"} justifyContent={"space-evenly"}>
           {exchangeList?.map((exchange: any) => (
             <Link href={exchange?.coinrankingUrl} key={exchange?.uuid}>
               <Flex
